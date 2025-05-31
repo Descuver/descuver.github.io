@@ -1,0 +1,5 @@
+<script>
+  // Redirect all requests to index.html (for SPA routing)
+  const redirectTo = location.pathname.replace(/\/+$/, '');
+  location.replace('/index.html?redirect=' + redirectTo);
+</script>

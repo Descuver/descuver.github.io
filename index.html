@@ -10,6 +10,7 @@
         if (redirectPath) {
             const decodedPath = decodeURIComponent(redirectPath);
             window.history.replaceState(null, '', decodedPath);
+            window.dispatchEvent(new PopStateEvent('popstate'));
         }
     </script>
     

@@ -1,2 +1,1 @@
-RewriteEngine On
-RewriteRule ^books/([^/]+)/page\.html$ /books/$1/ [R=301,L]
+
